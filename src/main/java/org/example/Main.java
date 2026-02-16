@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Hello world!");
+
     }
 
     public static boolean shouldWakeUp(boolean isBarking, int clock) {
@@ -13,6 +14,7 @@ public class Main {
         }
 
         if (isBarking && (clock >= 20 || clock < 8)) {
+            return true;
         }
 
         return false;
